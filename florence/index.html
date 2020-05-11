@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Доставка цветов "Florenция" | Костанай</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script> 
+</head>
+
+<body>
+
+	<header class="my-header">
+		<div class="container">
+			<div class="header-bar div-flex-x">
+				<a href="#" class="header-logo">
+					<img class="img-logo" src="img/logo.svg" alt="Florenция">
+					<div class="logo-text">
+						<img class="img-logo-text" src="img/logo_text.svg" alt="">
+						<p class="text">доставка цветов</p>
+					</div>
+				</a>
+				<div class="header-menu">
+					<div class="nav-menu">
+						<div class="menu-catalog">
+							<button class="menu-item__catalog text" onclick="active_catalog(this)">
+									<div class ="h-catalog-toggle">
+										<span></span><span></span><span></span>
+									</div>	
+									Каталог
+							</button>
+							<div class="menu-catalog-div" onclick="deactive_catalog(this)">
+								<div class="div-flex-x">
+									<div class="menu-catalog-item"><a class="text level1" href="#">Букеты</a></div>
+									<div class="menu-catalog-item"><a class="text level1" href="#">Цветы в коробке</a></div>
+									<div class="menu-catalog-item"><a class="text level1" href="#">Дополнительные товары</a>
+										<div class="menu-catalog-item submenu-catalog-item"><a class="text" href="#">Открытки</a></div><div class="menu-catalog-item submenu-catalog-item"><a class="text" href="#">Игрушки</a></div>
+										<div class="menu-catalog-item submenu-catalog-item"><a class="text" href="#">Подарочкая упаковка</a></div>
+									</div>
+								</div>							
+							</div>
+						</div>
+						<ul class="main-menu">
+							<li class="main-menu-item"><a class="header-menu__item text" href="#steps">Как заказать</a></li>
+							<li class="main-menu-item"><a class="header-menu__item text" href="#">Оплата</a></li>
+							<li class="main-menu-item"><a class="header-menu__item text" href="#">Доставка</a></li>
+							<li class="main-menu-item"><a class="header-menu__item text" href="#about">О нас</a></li>	
+							<li class="main-menu-item"><a class="header-menu__item text" href="#contact">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-contacts div-flex-x">
+					<div class="header-contacts-info div-flex-y">
+						<div class="header-phone text-big text-bold"><i class="fa fa-phone" aria-hidden="true"></i><span class="header-contacts__phone">+7 (7142) 12-23-34</span></div>
+						<p class="header-time text">время работы: 9.00 - 23.00</p>
+					</div>
+					<div class="div-sign">	
+						<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+						<button class ="h-menu-toggle" onclick="active_menu(this)">
+							<span></span><span></span><span></span>
+						</button>						
+					</div>
+					
+					<div class="mobile-menu" onclick="deactive_menu(this)">
+						<ul>							
+							<li>							
+								<div class="mobile-menu__item">Каталог</div>
+								<ul class="mobile-submenu">
+									<li><a href="#" class="mobile-menu__subitem">Букеты</a></li>
+									<li><a href="#" class="mobile-menu__subitem">Цветы в коробке</a></li>
+									<li><a href="#" class="mobile-menu__subitem">Дополнительные товары</a></li>
+								</ul>
+							</li>	
+							<li><a href="#steps" class="mobile-menu__item">Как заказать</a></li>	
+							<li><a href="#" class="mobile-menu__item">Оплата</a></li>	
+							<li><a href="#" class="mobile-menu__item">Доставка</a></li>	
+							<li><a href="#about" class="mobile-menu__item">О нас</a></li>	
+							<li><a href="#contact" class="mobile-menu__item">Контакты</a></li>				
+						</ul>
+						
+						<div class="mobile-contacts">
+							<p class="mobile-adress text-big text-bold">г. Костанай</p>							
+							<p class="mobile-adress text">ул. Алтынсарина 114</p>
+							<p class="mobile-adress text">ТРЦ «Костанай Плаза»</p>
+							<div class="mobile-phone text-big text-bold">+7 (7142) 12-23-34</div>
+							<p class="mobile-time text">время работы: 9.00 - 23.00</p>						
+							<div class="mobile-social">
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<img class="img-vert-logo" src="img/vert_logo.svg" alt="">
+
+			<div class="col-lg-8 col-xl-7 col-fhd-7">
+				<h1 class="h1">Цветы для любимых</h1>
+				<p class="sub-title">доставка цветов в букетах и шляпных коробках по Костанаю</p>
+				<div class="bar-button">
+					<a href="#" class="button button-accent">Заказать букет</a>
+					<a href="#" class="button button-second">В каталог<img class="img-button" src="img/right-arrow.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="plus div-flex-x col-lg-6 col-xga-6 col-fhd-6">
+				<div class="plus-item">
+					<img class="plus-img" src="img/wallet.svg" alt="">
+					<p class="text-micro plus-text">оплата при<br>получении</p>
+				</div>
+				<div class="plus-item">
+					<img class="plus-img" src="img/timing.svg" alt="">
+					<p class="text-micro plus-text">доставка<br>от 30 минут</p>
+				</div>
+				<div class="plus-item">
+					<img class="plus-img plus-img3" src="img/delivery2.svg" alt="">
+					<p class="text-micro plus-text">доставка<br>по городу</p>
+				</div>
+				<div class="plus-item">
+					<img class="plus-img" src="img/gift.svg" alt="">
+					<p class="text-micro plus-text">подарочная<br>упаковка</p>
+				</div>
+			</div>
+							
+		</div>
+	</header>
+
+	<div id="cover-header" onclick="deactive_menu(this)"></div>		
+	<div id="cover-catalog" onclick="deactive_catalog(this)">
+	</div>	
+	
+	<section class="section-flowers">
+		<div class="container">
+			<p class="section-title">БУКЕТЫ</p>
+			
+			<p class="offset-lg-0 col-lg-5 col-xga-4 offset-fhd-1 col-fhd-4 first-part text">Мы собираем свои букеты из самых свежих цветов. В цветочных композициях используются лучшие сочетания цветов. Мы следуем самым модным тенденциям в цветочном дизайне, используем разные цвета и фактуры. В букеты добавляются дополнительные декоративные элементы в виде декоративной травы и мелких цветов.</p>
+
+			<p class="offset-md-0 col-md-9 offset-lg-0 col-lg-5 offset-xga-1 col-xga-4 offset-fhd-2 col-fhd-4 text">В нашей коллекции есть букеты на любой случай - юбилей, день рождения, годовщина, свадьбы. Мы собирем маленький и нежный букет для юной девушки или большой и статусный букет юбиляра.</p>
+
+			<p class="offset-md-2 col-md-9 offset-lg-1 col-lg-5 offset-xga-0 col-xga-4 offset-fhd-1 col-fhd-4 unvisible-3 text">Каждый букет декорируется дополнительными материалами. Это может быть сетка, гофрированная бумага, фетр, эко-материалы. В зависимости от повода букет может быть украшен лентами - широкими или узкими.</p>
+			<p class="offset-md-1 col-md-9 offset-lg-0 col-lg-5 offset-xga-1 col-xga-4 offset-fhd-2 col-fhd-4 unvisible-3 text">Мы можем собрать букет, исходя исключительно из ваших предпочтений. Назовите любимые цветы, их цвет, скажите для кого и по какому поводу вы подыскиваете букет, и мы соберем именно то, о чем вы мечтали...</p>				
+			
+			<div class="bouquet-big col-lg-6 col-fhd-5">
+				<img class="img-big" src="img/bouquets/bouquet6.jpg" alt="">
+			</div>
+			<div class="row bouquet-button">
+				<div class="bouq-button order-2 col-12 order-sm-1 col-sm-4 col-lg-3">
+					<a href="#" class="button button-accent">В каталог<img class="img-button" src="img/right-arrow-white.svg" alt=""></a>
+				</div>
+			
+				<div class="order-1 col-12 order-sm-2 col-sm-8 col-lg-6 div-flex-x-center">
+					<div class="bouquet-list">
+						<img class="img-small first-part" src="img/bouquets/bouquet4.jpg" alt=""><!--				
+					 --><img class="img-small second-part" src="img/bouquets/bouquet7.jpg" alt=""><!--				
+					 --><img class="img-small" src="img/bouquets/bouquet5.jpg" alt=""><!--				
+					 --><img class="img-small" src="img/bouquets/bouquet8.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-box section-flowers">
+		<div class="container">
+			<p class="section-title">ЦВЕТЫ В КОРОБКЕ</p>
+
+			<p class=".no-gutters offset-md-0 col-md-9 offset-lg-6 col-lg-5 col-xga-4 offset-fhd-7 col-fhd-4 text">Цветы в шляпной коробке - это современный и оригинальный способ преподнесения цветов. Это красиво и стильно. Вам не нужно искать вазу, подходящую к букету. Мы для вас подберем самую лучшую коробку - такую, которая составит единую композицию с цветами!</p>
+			<p class="offset-md-1 col-md-9 offset-lg-7 col-lg-5 col-xga-4 offset-fhd-8 col-fhd-4 unvisible-3 text">Благорадя современным технологиям цветы в коробке будут сохранятся свежими долгое время. Вам не придется менять или доливать воду, чтобы цветы не завяли раньше времени. Все необходимое уже есть в коробке.</p>
+			<p class="offset-lg-6 col-lg-5 col-xga-4 offset-fhd-7 col-fhd-4 first-part text">Сами коробки - не просто емкость для переноски и хранения цветов. Каждая коробка - красива по своему. Мы находим самые лучшие и качественные коробки, они не только сохранят ваши цветы максимально долго. Они смогут радовать ваш дом своей красотой и функицональностью  даже после того, как цветы завянут.</p>
+			<p class="offset-md-2 col-md-9 offset-lg-6 col-lg-5 offset-xga-7 col-xga-4 offset-fhd-8 col-fhd-4 unvisible-3 text">Цветы в шляпных коробках эксклюзивны и долговечны. Сделайте выбор в пользу этого оригинального букета и вы не пожалеете!</p>				
+
+			<div class="box-big col-lg-6 col-fhd-5">
+				<img class="img-big" src="img/bouquets/box7.jpg" alt="">
+			</div>
+			<div class="row bouquet-button">
+				<div class="offset-sm-0 col-sm-8 offset-lg-3 col-lg-6 div-flex-x-center">
+					<div class="bouquet-list">
+						<img class="img-small" src="img/bouquets/box6.jpg" alt=""><!--				
+					 --><img class="img-small second-part" src="img/bouquets/box8.jpg" alt=""><!--				
+					 --><img class="img-small first-part" src="img/bouquets/box2.jpg" alt=""><!--				
+					 --><img class="img-small" src="img/bouquets/box4.jpg" alt="">
+					</div>
+				</div>
+				<div class="box-button col-12 col-sm-4 col-lg-3">
+					<a href="#" class="button button-accent">В каталог<img class="img-button" src="img/right-arrow-white.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-steps" id="steps">
+		<div class="container">
+			<p class="section-title">КАК ЗАКАЗАТЬ</p>
+
+			<div class="div-flex-x">
+				<div class="step-item step-item1 div-flex-y">
+					<div class="step-item_descript">
+						<p class="step-item_title">1</p>
+						<div>
+							<p class="text">Вы определяете для кого предназначен букет, ориентируетесь на какой-то повод или выбираете любой букет или цветы в коробке из каталога.</p>
+							<p class="text">Вы можете решить, что хотите заказать свой особенный букет, определяетесь - какие цветы, в каком количестве будут в букете, какова будет его упаковка.</p>
+						</div>
+					</div>
+					<div class="div-flex-x-center">
+						<img class="img-step" src="img/bouquet.svg" alt="">
+					</div>	
+					<img class="img-arrow img-arrow1" src="img/step-arrow4.svg" alt="">
+				</div>
+				<div class="step-item step-item2 div-flex-y">
+					<div class="step-item_descript">
+						<p class="step-item_title">2</p>
+						<div>
+							<p class="text">Вы можете заказать готовый букет непосредственно в Каталоге, выбрав кнопку «Заказать».</p>
+							<p class="text">Вы можете перечислить свои предпочтения, заполнив форму «Оставить заявку» на этой странице.</p>
+							<p class="text">Вы можете передать все свои пожелания. в том числе и по готовым букетам, по указанным на сайте телефонам или в мессенжере WhatsApp.</p>
+						</div>
+					</div>
+					<div class="div-flex-x">
+						<img class="img-step" src="img/phone.svg" alt="">
+						<img class="img-step" src="img/form.svg" alt="">
+						<img class="img-step" src="img/whatsapp.svg" alt="">
+					</div>	
+					<img class="img-arrow img-arrow2" src="img/step-arrow5.svg" alt="">
+					<img class="img-arrow img-arrow2_small" src="img/step-arrow1.svg" alt="">
+				</div>		
+				<div class="step-item step-item1 div-flex-y">
+					<div class="step-item_descript">
+						<p class="step-item_title">3</p>
+						<div>
+							<p class="text">При поступлении заявки наш менеджер свяжется с вами в течении 10 минут.</p>
+							<p class="text">Мы уточним ваш заказ: наличие выбраных вами букетов и цветов, возможность создания уникального букета по ваших предпочтениям.</p>
+							<p class="text">Менеджер обсудит с вами стоимость заказа и варианты оплаты.</p>
+							<p class="text">Затем мы уточняем адрес и время доставки.</p>
+						</div>
+					</div>
+					<div class="div-flex-x-center">
+						<img class="img-step" src="img/operator.svg" alt="">
+					</div>	
+					<img class="img-arrow img-arrow3" src="img/step-arrow3.svg" alt="">
+				</div>			
+				<div class="step-item step-item2 div-flex-y">
+					<div class="step-item_descript">
+						<p class="step-item_title">4</p>
+						<div>
+							<p class="text">Мы можем доставить букет нашим курьером или вы можете сами забрать букет из пункта самовывоза, который обговорите с менеджером при оформлении заказа.</p>
+							<p class="text">Нам нужно от 30 минут, чтобы собрать ваш букет. При срочном заказе время готовности уточняйте у менеджера.</p>
+							<p class="text">Доставка производится с 9 утра до 21 вечера каждый день.</p>
+						</div>
+					</div>
+					<div class="div-flex-x-center">
+						<img class="img-step" src="img/delivery.svg" alt="">
+					</div>	
+				</div>	
+			</div>
+		</div>		
+	</section>
+	
+	<section class="section-record" id="s-record">
+		<div class="container">
+			<div class="row">
+				<div class="record-descript offset-md-0 col-md-10 offset-lg-0 col-lg-6">
+					<p class="section-title">ОСТАВИТЬ ЗАЯВКУ</p>
+					<p class="text offset-0 offset-md-2 offset-lg-0 offset-xl-1 offset-xga-2">Здесь вы можете оставить заявку на выбранный в каталоге букет, заказать обратный звонок или задать свой вопрос.</p>
+					<p class="text offset-0 offset-md-2 offset-lg-0 offset-xl-1 offset-xga-2">Если вы хотите собрать букет, непохожий ни на один из тех, что представлен в каталоге, вы можете указать здесь свои пожелания.</p>
+					<p class="text offset-0 offset-md-2 offset-lg-0 offset-xl-1 offset-xga-2">Наш менеджер свяжется с вами и вы сможете обсудить все детали и интересующие вас вопросы.</p>
+					<p class="text offset-0 offset-md-2 offset-lg-0 offset-xl-1 offset-xga-2">Мы с радостью ответим на любой ваш запрос!</p>
+				</div>
+				<div class="record-form offset-0 col-12 offset-sm-1 col-sm-10 offset-md-2 col-md-8 offset-lg-0 col-lg-6 offset-xl-1 col-xl-5 col-fhd-4">
+					<form id="record">
+						<div class="record-fields">
+							<p class="text record-title">Наш менеджер свяжется с вами в течение 10 минут</p>
+							<p class="text-small"><input class="input-box" type="text" name="phone" value="" form="record" placeholder="Ваш телефон..."></p>
+							<p class="question-text text-small"><textarea name="message" cols="150" rows="6" form="record" placeholder="укажате номер букета из каталога и ваши пожелания по заказу или задайте интересующий вопрос..." required="required"></textarea></p>
+							<p class="record-policy text-small">Нажимая кнопку "Отправить", вы  соглашаетесь<br>с <a href="#" rel="nofollow">Политикой конфиденциальности</a></p>		
+							<div class="record-button">
+								<input type="submit" value="Отправить" class="button button-second">
+							</div>								
+							
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-big-img order-2 col-sm-4 order-md-1 col-md-4 col-lg-6 col-xl-6 col-xga-4 col-fhd-4">
+					<img class="about-bouquet-big" src="img/bouquets/about1.jpg" alt="">
+				</div>
+				<div class="about-medium-img order-3 col-12 col-sm-8 order-md-2 col-md-4 col-lg-6 col-xl-6 col-xga-3">
+					<img class="about-bouquet-medium" src="img/bouquets/about2.jpg" alt="">
+					<div class="row">
+					<img class="about-bouquet-small col-sm-6 col-md-12 col-lg-6 col-xl-6" src="img/bouquets/about3.jpg" alt="">
+					<img class="about-bouquet-small second-part col-sm-6" src="img/bouquets/about4.jpg" alt="">
+					</div>
+				</div>				
+				<div class="about-descript  order-1 col-12 order-md-3 col-md-8 col-lg-6 col-xl-6 offset-xga-0 col-xga-5">
+					<p class="section-title">О нас</p>
+					<p class="col-md-10 col-lg-10 text">«Florenция» - это цветочный магазин, который успешно работает в Костанае уже более 10 лет. За это время мы открыли 2 цветочных салона и начали доставлять букеты по заказам через интеренет.<span class="first-part"> Мы наладили систему курьерской доставки, чтобы наши клиенты получали лучшие букеты в самое короткое время.</span></p>
+					<p class="offset-md-2 col-md-10 offset-lg-2 col-lg-10 text">У нас - самые свежие цветы. Мы получаем новые цветы трижды в неделю. Все цветы хранятся в специализированных холодильниках, что позволяет оставаться им свежими не только в момент создания букета, но и еще долго после его вручения.</p>
+					<p class="col-md-10 col-lg-10 text">Наши флористы обучаются ежегодно у самых известных флористов страны.<span class="first-part"> Мы умеем сочетать разнообразные цветы и создавать из них оригинальные композиции. В букетах используются интересные и экологичные материалы для упаковки и оформления.</span> Мы готовы предложить вам самые современные букеты на любой повод - красивые и долговечные.</p>
+					<p class="offset-md-2 col-md-10 offset-lg-2 col-lg-10 text">И конечно же, каждый букет создается нами с любовью к вам, наши дорогие друзья!</p>
+				</div>		
+			</div>
+		</div>
+	</section>
+
+	<section class="section-contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-10 col-md-6">
+					<div class="contact-adress">
+						<p class="h2 section-title">Контакты</p>	
+						<div class="offset-0 offset-lg-2">
+							<p class="contact-type text">Мы работаем каждый день с 9.00 до 23.00</p>
+							<p class="contact-type text text-bold ">Контракт-центр:</p>
+							<p class="contact-text text">телефон : +7 (7142) 12-23-34<br>WhatsApp: +7-777-222-33-44</p>
+							<p class="contact-type text text-bold">E-mail:</p>
+							<p class="contact-text text">info@florencia.kz</p>
+							<p class="contact-type text text-bold">Точки самовывоза:</p>
+							<p class="contact-text text">г. Костанай, ТРЦ «Костанай Плаза»<br>телефоны: +7 (7142) 54-23-12, +7-777-221-01-01</p>
+							<p class="contact-text text">г. Костанай, ул. Алтынсарина, 114<br>телефоны: +7 (7142) 37-34-12, +7-701-890-12-39</p>
+						</div>
+					</div>
+				</div>				
+				
+				<div class="offset-1 col-10 offset-sm-1 col-sm-10 offset-md-0 col-md-6 col-xl-5 col-xga-4">
+					<div class="contact-card"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa7354c6a5e2235ecbde64d6853f06d9facfd1a4d267da388a7568e59883c1972&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>			
+					</div>
+				</div>		
+			</div>		
+		</div>
+	</section>
+	
+<!-- Подвал -->
+	<footer class="my-footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-logo col-12 col-sm-7 col-md-5 col-lg-4 col-xl-3 col-fhd-2">
+					<a href="#">
+						<img class="img-logo" src="img/logo-white.svg" alt="Florenция">
+						<div class="logo-text">
+							<img class="img-logo-text" src="img/logo_text_white.svg" alt="">
+							<p class="text">доставка цветов</p>
+						</div>
+					</a>
+				</div>
+				<div class="footer-contact col-12 col-sm-5 col-md-4 offset-lg-0 offset-xl-1 offset-fhd-2 col-xl-4">
+					<div class="text-big text-bold text-center"><i class="fa fa-phone" aria-hidden="true"></i><span class="header-contacts__phone">+7 (7142) 12-23-34</span></div>
+					<div class="footer-social div-flex-x-center">
+						<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+					</div>					
+				</div>				
+				<div class="footer-text col-3 col-lg-4">
+					<div class="footer-navigation text">
+						<ul>
+							<li><a href="#about">О нас</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#steps">Как заказать</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#s">Доставка</a></li>
+							<li><a href="#contact">Контакты</a></li>
+						</ul>	 			
+					</div>		
+				</div>
+			</div>
+			<div class="footer-last row">
+				<div class="footer-copyright text-small text-bold col-12 col-sm-6">
+					<i class="fa fa-copyright" aria-hidden="true"></i> Florenция, 2020
+				</div>
+				<div class="footer-policy text-small text-bold col-12 col-sm-6">
+					<a href="#">Политика конфиденциальности</a>
+				</div>				
+			</div>
+		</div>
+	</footer> 	
+	
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
