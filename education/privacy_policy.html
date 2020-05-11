@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Политика конфиденциальности | Детский центр "Развитие" Костанай</title>
+	<meta name="description" content="Политика конфиденциальности">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script> 
+	<script src="js/main.js"></script>
+	<script src="https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.closest"></script>
+</head>
+
+<body class="second-page">
+<!-- Шапка сайта-->
+	<header class="my-header">
+		<div class="green-line"></div>
+		<div class="container">
+			<div class="header-bar">
+				<div>
+					<a href="index.html">	
+						<div class="header-logo">
+							<img class="img-logo" src="img/logo_white.png" alt="Развитие"><!--				
+						 --><div class="text-logo">
+								<p class="text-logo__small">детский центр</p>
+								<p class="text-logo__big">РАЗВИТИЕ</p>
+							</div>
+						</div>
+					</a>
+					<div class="header-menu">
+						<ul class="main-menu">
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="index.html#welcome">О нас</a>
+								<ul class="submenu" data-item="about">
+									<li class="submenu-item"><a href="index.html#welcome">Наша миссия</a></li>
+									<li class="submenu-item"><a href="parents.html#rules">Наши правила</a></li>
+									<li class="submenu-item"><a href="index.html#plus">Почему именно мы?</a></li>
+									<li class="submenu-item"><a href="index.html#team">Наша команда</a></li>
+<!--									<li class="submenu-item"><a href="vacancies.html">Работа у нас</a></li>-->
+								</ul>
+							</li>
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="groups.html">Наши группы</a>
+								<ul class="submenu">
+									<li class="submenu-item"><a href="groups.html#group1_2">"Я и мама", группа от до 2 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group2_3">"Я сам", группа от 2 до 3 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group3_4">"Я и ты", группа от 3 до 4 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group4_5">"Я и мир", группа от 4 до 5 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group5_6">"Я и школа", группа от 5 до 6 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group6_7">"Я иду в первый класс", группа от 6 до 7 лет</a></li>								
+								</ul>
+							</li>
+							<li class="main-menu-item"><a class="header-menu__item" href="cost.html">Стоимость</a></li>
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="parents.html">Родителям</a>
+								<ul class="submenu last-submenu" data-item="parent">
+									<li class="submenu-item"><a href="parents.html">Условия поступления</a></li>
+									<li class="submenu-item"><a href="parents.html#rules">Наши правила</a></li>
+<!--
+									<li class="submenu-item"><a href="recommendations.html">Рекомендации специалистов</a></li>
+									<li class="submenu-item"><a href="school_of_parents.html">Школа для родителей "В Ось Питание"</a></li>
+-->
+								</ul>								
+							</li>
+							<li class="main-menu-item"><a class="header-menu__item" href="index.html#contact">Контакты</a></li>
+						</ul>
+					</div>					
+				</div>
+	
+				<div class="mobile-menu" onclick="deactive_menu(this)">
+					<ul>
+						<li>
+							<!-- к классу mobile-menu__item привязан обраточик OnClick  - щелчок по пункту меню, чтобы развернуть подменю -->
+							<div class="mobile-menu__item clearfix" data-item="about" >
+								<span>О нас</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>	
+							<ul class="mobile-submenu" data-item="about">
+								<li><a href="index.html#welcome" class="mobile-menu__subitem  mobile-item-link">Наша миссия</a></li>
+								<li><a href="parents.html#rules" class="mobile-menu__subitem  mobile-item-link">Наши правила</a></li>
+								<li><a href="index.html#plus" class="mobile-menu__subitem mobile-item-link">Почему именно мы?</a></li>
+								<li><a href="index.html#team" class="mobile-menu__subitem mobile-item-link">Наша команда</a></li>
+<!--								<li><a href="vacancies.html" class="mobile-menu__subitem">Работа у нас</a></li>-->
+							</ul>						
+						</li>
+						<li>
+							<div class="mobile-menu__item clearfix" data-item="group">
+								<span>Наши группы</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>
+							<ul class="mobile-submenu" data-item="group">
+								<li><a href="groups.html#group1_2" class="mobile-menu__subitem">"Я и мама", группа от до 2 лет</a></li>
+								<li><a href="groups.html#group2_3" class="mobile-menu__subitem">"Я сам", группа от 2 до 3 лет</a></li>
+								<li><a href="groups.html#group3_4" class="mobile-menu__subitem">"Я и ты", группа от 3 до 4 лет</a></li>
+								<li><a href="groups.html#group4_5" class="mobile-menu__subitem">"Я и мир", группа от 4 до 5 лет</a></li>
+								<li><a href="groups.html#group5_6" class="mobile-menu__subitem">"Я и школа", группа от 5 до 6 лет</a></li>
+								<li><a href="groups.html#group6_7" class="mobile-menu__subitem">"Я иду в первый класс", группа от 6 до 7 лет</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="cost.html" class="mobile-menu__item">Стоимость</a></li>	
+						<li>
+							<div class="mobile-menu__item clearfix" data-item="parent" >
+								<span>Родителям</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>	
+							<ul class="mobile-submenu" data-item="parent">
+								<li><a href="parents.html" class="mobile-menu__subitem">Условия поступления</a></li>
+								<li><a href="parents.html#rules" class="mobile-menu__subitem">Наши правила</a></li>
+<!--
+								<li><a href="recommendations.html" class="mobile-menu__subitem">Рекомендации специалистов</a></li>
+								<li><a href="school_of_parents.html" class="mobile-menu__subitem">Школа для родителей "В Ось Питание"</a></li>
+-->
+							</ul>								
+						</li>
+						<li><a href="index.html#contact" class="mobile-menu__item mobile-item-link">Контакты</a></li>				
+					</ul>
+				</div>
+				<div class="header-contacts">
+					<div class="header-contacts__adress div-flex-x">
+						<p class="text-small">г. Костанай, ул. 1 Мая, д. 90/2</p>
+						<a href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
+					<div class="header-contacts__phone">+7 777 256 27 26 <a href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<button class ="h-menu-toggle" onclick="active_menu(this)">
+							<span></span><span></span><span></span>
+						</button>						
+					</div>
+				</div>
+			</div>										
+		</div>	
+	</header>
+
+
+<div id="cover-header" onclick="deactive_menu(this)"></div>
+
+	<div class="content-page">
+		<div class="container">
+			<h1 class="h1 title-center">Политика конфиденциальности</h1>
+			<p class="text">Последнее обновление: 01 января 2020 года</p>
+			<p class="h3">1. ОСНОВНЫЕ ПОНЯТИЯ</p>
+			<p class="text">Сайт – сайт, расположенный в сети Интернет по адресу: www.centr_razvitie_kst.kz.<br>
+			Администрация Сайта - детский центр "Развитие".<br>	
+			Пользователь – физическое или юридическое лицо, разместившее свою персональную информацию посредством Формы обратной связи на сайте с последующей целью передачи данных Администрации Сайта.<br>
+			Форма обратной связи – специальная форма, где Пользователь размещает свою персональную информацию с целью передачи данных Администрации Сайта.</p>
+			<p class="h3">2. ОБЩИЕ ПОЛОЖЕНИЯ</p>
+			<p class="text">2.1. Настоящая Политика конфиденциальности является официальным типовым документом Администрации Сайта и определяет порядок обработки и защиты информации о физических и юридических лицах, использующих Форму обратной связи на Сайте.<br>
+			2.2. Целью настоящей Политики конфиденциальности является обеспечение надлежащей защиты информации о Пользователе, в т.ч. его персональных данных от несанкционированного доступа и разглашения.<br>
+			2.3. Отношения, связанные со сбором, хранением, распространением и защитой информации о пользователях регулируются настоящей Политикой конфиденциальности и действующим законодательством Республики Казахстан.<br>
+			2.4. Действующая редакция Политики конфиденциальности, является публичным документом, разработана Администрацией Сайта и доступна любому Пользователю сети Интернет при переходе по гипертекстовой ссылке «Политика конфиденциальности».<br>
+			2.5. Администрация Сайта вправе вносить изменения в настоящую Политику конфиденциальности.<br>
+			2.6. При внесении изменений в Политику конфиденциальности, Администрация Сайта уведомляет об этом Пользователя путём размещения новой редакции Политики конфиденциальности на Сайте www.it-made.kz.<br>
+			2.7. При размещении новой редакции Политики конфиденциальности на Сайте, предыдущая редакция хранятся в архиве документации Администрации Сайта.<br>
+			2.8. Используя Форму обратной связи, Пользователь выражает свое согласие с условиями настоящей Политики конфиденциальности.<br>
+			2.9. Администрация Сайта не проверяет достоверность получаемой (собираемой) информации о Пользователе.</p>
+			<p class="h3">3. УСЛОВИЯ И ЦЕЛИ СБОРА И ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ ПОЛЬЗОВАТЕЛЕЙ</p>
+			<p class="text">3.1. Персональные данные Пользователя такие как: имя, e-mail, телефон и др., передаются Пользователем  Администрации Сайта с согласия Пользователя.<br>  
+			3.2. Передача персональных данных Пользователем Администрации Сайта, через Форму обратной связи  означает согласие Пользователя на передачу его персональных данных.<br>
+			3.3. Администрация Сайта осуществляет обработку информации о Пользователе, в т.ч. его персональных данных, таких как: имя, e-mail, телефон и др., а также дополнительной информации о Пользователе, предоставляемой им по своему желанию: организация, город, должность и др. в целях выполнения обязательств перед Пользователем Сайта.<br>
+			3.4. Обработка персональных данных осуществляется на основе принципов:<br>
+			а) законности целей и способов обработки персональных данных и добросовестности;<br>
+			б) соответствия целей обработки персональных данных целям, заранее определенным и заявленным при сборе персональных данных;<br>
+			в) соответствия объёма и характера обрабатываемых персональных данных способам обработки персональных данных и целям обработки персональных данных;<br>
+			г) недопустимости объединения созданных для несовместимых между собой целей баз данных, содержащих персональные данные.<br>
+			3.5. Администрация Сайта осуществляет обработку персональных данных Пользователя с его согласия в целях оказания услуг, предлагаемых на Сайте.</p>
+			<p class="h3">4. ХРАНЕНИЕ И ИСПОЛЬЗОВАНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+			<p class="text">Персональные данные Пользователя хранятся исключительно на электронных носителях и используются строго по назначению, оговоренному в п.3 настоящей Политики конфиденциальности.</p>
+			<p class="h3">5. ПЕРЕДАЧА ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+			<p class="text">5.1. Персональные данные Пользователя не передаются каким-либо третьим лицам, за исключением случаев, прямо предусмотренных настоящей Политикой конфиденциальности.<br>
+			5.2. Предоставление персональных данных Пользователя по запросу государственных органов, органов местного самоуправления осуществляется в порядке, предусмотренном законодательством Республики Казахстан.</p>
+			<p class="h3">6. СРОКИ ХРАНЕНИЯ И УНИЧТОЖЕНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+			<p class="text">6.1. Персональные данные Пользователя хранятся на электронном носителе сайта бессрочно.<br>
+			6.2. Персональные данные Пользователя уничтожаются при желании самого пользователя на основании его обращения, либо по инициативе Администратора сайта без объяснения причин путём удаления Администрацией Сайта информации, размещённой Пользователем.</p>
+			<p class="h3">7. ПРАВА И ОБЯЗАННОСТИ ПОЛЬЗОВАТЕЛЕЙ</p>
+			<p class="text">Пользователи вправе на основании запроса получать от Администрации Сайта информацию, касающуюся обработки его персональных данных.</p>
+			<p class="h3">8. МЕРЫ ПО ЗАЩИТЕ ИНФОРМАЦИИ О ПОЛЬЗОВАТЕЛЯХ</p>
+			<p class="text">Администратор Сайта принимает технические и организационно-правовые меры в целях обеспечения защиты персональных данных Пользователя от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий.</p>
+		</div>
+	</div>
+
+<!-- Подвал -->
+	<footer class="my-footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-contact col-12 order-2 col-sm-6 order-sm-2 order-md-1 col-md-4">
+					<p class="text-footer-small">г. Костанай, ул. 1 Мая, д. 90/2</p>
+					<div class="box-phone">
+						<p class="text-footer-small"><i class="fa fa-mobile" aria-hidden="true"></i>+7 777 256 27 26</p>
+						<p class="text-footer-small"><i class="fa fa-phone" aria-hidden="true"></i>8 (7142) 54-42-22</p>
+					</div>
+				</div>
+
+				<div class="footer-logo  col-12 order-1 col-sm-6 order-sm-1 order-md-2 col-md-4">
+					<a href="index.html">
+						<img class="img-logo" src="img/logo_white.png" alt="Развитие"><!--				
+					 --><div class="text-logo">
+							<p class="text-logo__small">детский центр</p>
+							<p class="text-logo__big">РАЗВИТИЕ</p>
+						</div>
+						</a>
+					<div class="social-footer">
+						<nav class="soc">
+							<ul>
+								<li><a href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+<!--								<li><a href="#"><i class="fa fa-vk"></i></a></li>-->
+							</ul>
+						</nav>	
+					</div>
+				</div>
+				<div class="footer-text order-md-3 col-md-4">
+					<div class="footer-navigation text-footer-small">
+						<ul>
+							<li><a href="index.html#welcome">О нас</a></li>
+							<li><a href="groups.html">Наши группы</a></li>
+							<li><a href="cost.html">Стоимость</a></li>
+							<li><a href="parents.html">Родителям</a></li>
+						</ul>	 			
+					</div>		
+				</div>
+
+			</div>
+			<div class="footer-last row">
+				<div class="footer-copyright text-footer-small col-sm-6">
+					<i class="fa fa-copyright" aria-hidden="true"></i> Детский центр "Развитие", 2019
+				</div>
+				<div class="footer-politic text-footer-small col-sm-6">
+					<a class="text-footer-small" href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer> 
+<div class="top" title="Наверх"><i class="fa fa-angle-up" aria-hidden="true"></i></div> 
+</body>
+</html>
+
+

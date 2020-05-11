@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Группы развития детей | Детский центр "Развитие" Костанай</title>
+	<meta name="description" content="Группы развития детей. Подготовка к школе. Программы соответствуют возрасту и используют элементы игры и обучения. Развитие мелкой и крупной моторики, развитие речи, рисование, лепка, познание мира, английский, навыки общения и многое другое!">
+	<meta name="keywords" content="развитие, группа, ребенок">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script> 
+	<script src="js/main.js"></script>
+	<script src="js/groups.js"></script>
+	<script src="https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.closest"></script>
+</head>
+
+<body class="second-page">
+<!-- Шапка сайта-->
+	<header class="my-header">
+		<div class="green-line"></div>
+		<div class="container">
+			<div class="header-bar">
+				<div>
+					<a href="index.html">	
+						<div class="header-logo">
+							<img class="img-logo" src="img/logo_white.png" alt="Развитие"><!--				
+						 --><div class="text-logo">
+								<p class="text-logo__small">детский центр</p>
+								<p class="text-logo__big">РАЗВИТИЕ</p>
+							</div>
+						</div>
+					</a>
+					<div class="header-menu">
+						<ul class="main-menu">
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="index.html#welcome">О нас</a>
+								<ul class="submenu" data-item="about">
+									<li class="submenu-item"><a href="index.html#welcome">Наша миссия</a></li>
+									<li class="submenu-item"><a href="parents.html#rules">Наши правила</a></li>
+									<li class="submenu-item"><a href="index.html#plus">Почему именно мы?</a></li>
+									<li class="submenu-item"><a href="index.html#team">Наша команда</a></li>
+<!--									<li class="submenu-item"><a href="vacancies.html">Работа у нас</a></li>-->
+								</ul>
+							</li>
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="#">Наши группы</a>
+								<ul class="submenu">
+									<li class="submenu-item"><a href="#group1_2">"Я и мама", группа от до 2 лет</a></li>
+									<li class="submenu-item"><a href="#group2_3">"Я сам", группа от 2 до 3 лет</a></li>
+									<li class="submenu-item"><a href="#group3_4">"Я и ты", группа от 3 до 4 лет</a></li>
+									<li class="submenu-item"><a href="#group4_5">"Я и мир", группа от 4 до 5 лет</a></li>
+									<li class="submenu-item"><a href="#group5_6">"Я и школа", группа от 5 до 6 лет</a></li>
+									<li class="submenu-item"><a href="#group6_7">"Я иду в первый класс", группа от 6 до 7 лет</a></li>								
+								</ul>
+							</li>
+							<li class="main-menu-item"><a class="header-menu__item" href="cost.html">Стоимость</a></li>
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="parents.html">Родителям</a>
+								<ul class="submenu last-submenu" data-item="parent">
+									<li class="submenu-item"><a href="parents.html">Условия поступления</a></li>
+									<li class="submenu-item"><a href="parents.html#rules">Наши правила</a></li>
+<!--
+									<li class="submenu-item"><a href="recommendations.html">Рекомендации специалистов</a></li>
+									<li class="submenu-item"><a href="school_of_parents.html">Школа для родителей "В Ось Питание"</a></li>
+-->
+								</ul>								
+							</li>
+							<li class="main-menu-item"><a class="header-menu__item" href="index.html#contact">Контакты</a></li>
+						</ul>
+					</div>					
+				</div>
+	
+				<div class="mobile-menu" onclick="deactive_menu(this)">
+					<ul>
+						<li>
+							<!-- к классу mobile-menu__item привязан обраточик OnClick  - щелчок по пункту меню, чтобы развернуть подменю -->
+							<div class="mobile-menu__item clearfix" data-item="about" >
+								<span>О нас</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>	
+							<ul class="mobile-submenu" data-item="about">
+								<li><a href="index.html#welcome" class="mobile-menu__subitem  mobile-item-link">Наша миссия</a></li>
+								<li><a href="parents.html#rules" class="mobile-menu__subitem  mobile-item-link">Наши правила</a></li>
+								<li><a href="index.html#plus" class="mobile-menu__subitem mobile-item-link">Почему именно мы?</a></li>
+								<li><a href="index.html#team" class="mobile-menu__subitem mobile-item-link">Наша команда</a></li>
+<!--								<li><a href="vacancies.html" class="mobile-menu__subitem">Работа у нас</a></li>-->
+							</ul>						
+						</li>
+						<li>
+							<div class="mobile-menu__item clearfix" data-item="group">
+								<span>Наши группы</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>
+							<ul class="mobile-submenu" data-item="group">
+								<li><a href="#group1_2" class="mobile-menu__subitem">"Я и мама", группа от до 2 лет</a></li>
+								<li><a href="#group2_3" class="mobile-menu__subitem">"Я сам", группа от 2 до 3 лет</a></li>
+								<li><a href="#group3_4" class="mobile-menu__subitem">"Я и ты", группа от 3 до 4 лет</a></li>
+								<li><a href="#group4_5" class="mobile-menu__subitem">"Я и мир", группа от 4 до 5 лет</a></li>
+								<li><a href="#group5_6" class="mobile-menu__subitem">"Я и школа", группа от 5 до 6 лет</a></li>
+								<li><a href="#group6_7" class="mobile-menu__subitem">"Я иду в первый класс", группа от 6 до 7 лет</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="cost.html" class="mobile-menu__item">Стоимость</a></li>	
+						<li>
+							<div class="mobile-menu__item clearfix" data-item="parent" >
+								<span>Родителям</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>	
+							<ul class="mobile-submenu" data-item="parent">
+								<li><a href="parents.html" class="mobile-menu__subitem">Условия поступления</a></li>
+								<li><a href="parents.html#rules" class="mobile-menu__subitem">Наши правила</a></li>
+<!--
+								<li><a href="recommendations.html" class="mobile-menu__subitem">Рекомендации специалистов</a></li>
+								<li><a href="school_of_parents.html" class="mobile-menu__subitem">Школа для родителей "В Ось Питание"</a></li>
+-->
+							</ul>								
+						</li>
+						<li><a href="index.html#contact" class="mobile-menu__item mobile-item-link">Контакты</a></li>				
+					</ul>
+				</div>
+				<div class="header-contacts">
+					<div class="header-contacts__adress div-flex-x">
+						<p class="text-small">г. Костанай, ул. 1 Мая, д. 90/2</p>
+						<a  href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
+					<div class="header-contacts__phone">+7 777 256 27 26 <a href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<button class ="h-menu-toggle" onclick="active_menu(this)">
+							<span></span><span></span><span></span>
+						</button>						
+					</div>
+				</div>
+			</div>										
+		</div>	
+	</header>
+
+
+<div id="cover-header" onclick="deactive_menu(this)"></div>
+
+	<div class="content-page">
+		<div class="container">
+			<h1 class="h1 title-center">Группы развития детей</h1>
+
+			<div class="groups-item" id="group1_2">
+				<div class ="groups-div-caption">
+					<h2 class="h2">Я и мама</h2>
+					<p class="h5">группа от 1 до 2 лет</p>	
+				</div>
+				<div class="row">
+					<div class="groups-item__description text-small col-12 col-md-8">
+						<p>Самое раннее развитие малыша - важный этап для формирования здоровой и счастливой личности!</p>
+						<p>Разумная занятость ребенка — одно из важных условий создания у него радостного, бодрого настроения. Наша программа составлена на основании психолого-педагогических требований к возрасту от 1-2 лет.</p>
+						<p>В программе в соответствии с возрастом:</p>
+						<ul>
+							<li>логоритмика</li>
+							<li>пальчиковые игры</li>
+							<li>развитие памяти, внимания, воображения, мышления</li>
+							<li>сенсорное развитие</li>
+							<li>развитие мелкой и крупной моторики</li>
+							<li>первая лепка, ИЗО</li>
+							<li>развитие речи</li>
+							<li>развитие общения с детьми и взрослыми</li>
+							<li>первые навыки самостоятельности</li>
+						</ul>
+					</div>
+					<div class="groups-item__button offset-1 col-10 offset-sm-3 col-sm-6 offset-md-0 col-md-4">
+						<img class="groups-item__img d-none d-sm-none d-md-block" src="img/group1.jpg" alt="">
+						<div class="bar-button">
+							<a href="#groups-record" class="button button-accent">Записаться в группу</a>
+						</div>	
+					</div>
+				</div>
+			</div>				
+			
+			<div class="groups-item" id="group2_3">
+				<div class ="groups-div-caption">
+					<h2 class="h2">Я сам</h2>
+					<p class="h5">группа от 2 до 3 лет</p>	
+				</div>
+				<div class="row">
+					<div class="groups-item__description text-small col-12 col-md-8">
+						<p>Основной вид деятельности – ИГРА!!! Игра переходит от наглядно-образной к абстрактной!</p>
+						<p>В этом возрасте ребенок психологически готов общаться с другим взрослым и с детьми без мамы. В этой группе мы начинаем подготовку к садику. Постепенно ребенок начинает заниматься самостоятельно!</p>
+						<p>В программе в соответствии с возрастом:</p>
+						<ul>
+							<li>логоритмика</li>
+							<li>пальчиковые игры</li>
+							<li>развитие памяти, внимания, воображения, мышления</li>
+							<li>сенсорное развитие</li>
+							<li>развитие мелкой и крупной моторики</li>
+							<li>первые аппликации, лепка, ИЗО</li>
+							<li>развитие речи</li>
+							<li>познание мира</li>
+							<li>развитие общения с детьми и взрослыми</li>
+							<li>развитие навыков самообслуживания и самостоятельности</li>
+						</ul>
+					</div>
+					<div class="groups-item__button offset-1 col-10 offset-sm-3 col-sm-6 offset-md-0 col-md-4">
+						<img class="groups-item__img d-none d-sm-none d-md-block" src="img/group2.jpg" alt="">
+						<div class="bar-button">
+							<a href="#groups-record" class="button button-accent">Записаться в группу</a>
+						</div>	
+					</div>
+				</div>
+			</div>				
+
+			<div class="groups-item" id="group3_4">
+				<div class ="groups-div-caption">
+					<h2 class="h2">Я и Ты</h2>
+					<p class="h5">группа от 3 до 4 лет</p>	
+				</div>
+				<div class="row">
+					<div class="groups-item__description text-small col-12 col-md-8">
+						<p>Основной вид деятельности – ИГРА!!! В этом возрасте задача родителей дать ребенку возможность быть самостоятельным, справиться с поставленной задачей.</p>
+						<p>В нашем центре мы учитываем развитие самостоятельности, развитие познавательного интереса, создаем условия для получения Радости от занятий!</p>
+						<p>В программе в соответствии с возрастом:</p>
+						<ul>
+							<li>развитие памяти, внимания, воображения, мышления</li>
+							<li>сенсорное развитие</li>
+							<li>развитие мелкой и крупной моторики</li>
+							<li>ИЗО, лепка, аппликации</li>
+							<li>развитие речи</li>
+							<li>знакомство с буквами и цифрами</li>
+							<li>познание мира</li>
+							<li>развитие логического мышления</li>
+							<li>развитие общения с детьми и взрослыми</li>
+						</ul>
+					</div>
+					<div class="groups-item__button offset-1 col-10 offset-sm-3 col-sm-6 offset-md-0 col-md-4">
+						<img class="groups-item__img d-none d-sm-none d-md-block" src="img/group3.jpg" alt="">
+						<div class="bar-button">
+							<a href="#groups-record" class="button button-accent">Записаться в группу</a>
+						</div>	
+					</div>
+				</div>
+			</div>				
+			<div class="groups-annotation" id="group_school">
+				<h2 class="groups-annotation__title">Подготовка к школе</h2>
+				<p class="h5">Подготовка к школе в нашей студии разделена на 3 ступени:</p>	
+				<p class="text-small">1 ступень – группа от 4 до 5 лет «Я и МИР»
+				<br>
+				2 ступень - группа от 5 до 6 лет «Я и Школа»
+				<br>
+				3 ступень – группа от 6 до 7 лет «Я иду в 1 класс»</p>
+			</div>
+			<div class="groups-item" id="group4_5">
+				<div class ="groups-div-caption">
+					<h2 class="h2">Я и МИР</h2>
+					<p class="h5">группа от 4 до 5 лет</p>	
+				</div>
+				<div class="row">
+					<div class="groups-item__description text-small col-12 col-md-8">
+						<p>Основной ведущий тип деятельности этого возраста – ИГРА!!!</p>
+						<p>В нашем центре ваш малыш в игровой форме познакомится с алфавитом, с буквами, звуками, слогами. Получит первые навыки письма и счета. Повысит знания об окружающем мире. Начнет знакомиться и учить казахский и английский языки.</p>
+						<p>В программе в соответствии с возрастом:</p>
+						<ul>
+							<li>развитие речи</li>
+							<li>подготовка руки к письму</li>
+							<li>первая математика</li>
+							<li>познание мира</li>
+							<li>казахский и английский языки</li>
+							<li>развитие памяти, мышления, внимания, воображения</li>
+							<li>геометрия для самых маленьких</li>
+							<li>сенсорное развитие</li>
+							<li>рисование и лепка</li>
+						</ul>
+					</div>
+					<div class="groups-item__button offset-1 col-10 offset-sm-3 col-sm-6 offset-md-0 col-md-4">
+						<img class="groups-item__img d-none d-sm-none d-md-block" src="img/group4.jpg" alt="">
+						<div class="bar-button">
+							<a href="#groups-record" class="button button-accent">Записаться в группу</a>
+						</div>	
+					</div>
+				</div>
+			</div>	
+
+			<div class="groups-item"  id="group5_6">
+				<div class ="groups-div-caption">
+					<h2 class="h2">Я и Школа</h2>
+					<p class="h5">группа от 5 до 6 лет </p>	
+				</div>
+				<div class="row">
+					<div class="groups-item__description text-small col-md-8">
+						<p>В этом возрасте происходит смена типа ведущей деятельности от ИГРЫ к ОБУЧЕНИЮ. Созревает волевая сфера, повышается уровень концентрации внимания, повышается мотивация к письму и чтению. </p>
+						<p>В программе в соответствии с возрастом:</p>
+						<ul>
+							<li>развитие речи</li>
+							<li>обучение чтению</li>
+							<li>обучение письму</li>
+							<li>математика</li>
+							<li>познавательная география, окружающий мир</li>
+							<li>казахский и английский языки</li>
+							<li>развитие памяти, внимания, воображения</li>
+							<li>геометрия</li>
+							<li>сенсорное развитие</li>
+							<li>рисование и лепка</li>
+							<li>развитие логического мышления</li>
+							<li>развитие волевых процессов</li>
+							<li>развитие навыков общения со взрослым и детьми</li>
+						</ul>
+					</div>
+					<div class="groups-item__button offset-1 col-10 offset-sm-3 col-sm-6 offset-md-0 col-md-4">
+						<img class="groups-item__img d-none d-sm-none d-md-block" src="img/group5.jpg" alt="">
+						<div class="bar-button">
+							<a href="#groups-record" class="button button-accent">Записаться в группу</a>
+						</div>	
+					</div>
+				</div>
+			</div>	
+
+			<div class="groups-item"  id="group6_7">
+				<div class ="groups-div-caption">
+					<h2 class="h2">Я иду в 1 класс</h2>
+					<p class="h5">группа от 6 до 7 лет </p>	
+				</div>
+				<div class="row">
+					<div class="groups-item__description text-small col-md-8">
+						<p>Экспресс-подготовка к школе. В этом возрасте форма проведения занятий носит обучающий характер. Одна из дополнительных задач - подготовить ребенка психологически к процессу обучения: поведение на уроке, общение с учителем, выполнение домашнего задания, умение отвечать у доски, самостоятельности и самообслуживанию.</p>
+						<p>В программе в соответствии с возрастом:</p>
+						<ul>
+							<li>развитие речи</li>
+							<li>обучение чтению</li>
+							<li>обучение письму</li>
+							<li>арифметика, геометрия</li>
+							<li>познавательная география, окружающий мир</li>
+							<li>казахский и английский языки</li>
+							<li>развитие памяти, внимания, воображения</li>
+							<li>рисование и лепка</li>
+							<li>развитие логического мышления</li>
+							<li>развитие волевых процессов</li>
+							<li>развитие навыков общения со взрослым и детьми</li>
+							<li>развитие самостоятельности и самообслуживания</li>
+						</ul>
+					</div>
+					<div class="groups-item__button offset-1 col-10 offset-sm-3 col-sm-6 offset-md-0 col-md-4">
+						<img class="groups-item__img d-none d-sm-none d-md-block" src="img/group6.jpg" alt="">
+						<div class="bar-button">
+							<a href="#groups-record" class="button button-accent">Записаться в группу</a>
+						</div>	
+					</div>
+				</div>
+			</div>	
+
+
+			<section class="section-record" id="groups-record">
+				<div class="row">
+					<div class="record-text col-12 offset-md-1 col-md-10 offset-md-1 offset-lg-0 col-lg-6">
+						<p class="h1 record-title">Запись в группу</p>
+						<p class="text-small">Чтобы записать вашего ребенка в группу, вам необходимо связаться с нами любым, удобным для вас способом - позвонить по указанным номерам телефонов, написать на WhatsApp или оставить заявку в данной форме.</p>
+						<p class="text-small">Укажите свои контакты и выбранную группу и мы свяжемся с вами для уточнения деталей.</p>	
+					</div>
+					<form id="record" class="record-form offset-1 col-10 offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-2 col-lg-4">
+						<div class="record-fields">
+							<p class="text-small"><input class="input-box" type="text" name="name" value="" form="record" placeholder="Ваше имя..."></p>
+							<p class="text-small"><input class="input-box" type="text" name="phone" value="" form="record" placeholder="Ваш телефон..."></p>
+							<p class="text-small"><input class="input-box" type="text" name="email" value="" form="record" placeholder="Ваш email..."></p>
+							<p class="text-small">
+							<select name="group" class="record-select" form="record">
+								<option disabled value="0" selected class="text-disable">выберите группу...</option>
+								<option value="1">Я и мама, группа 1-2 года</option>
+								<option value="2">Я сам, группа 2-3 года</option>
+								<option value="3">Я и ты, группа 3-4 года</option>
+								<option value="3">Я и мир, группа 4-5 лет</option>
+								<option value="3">Я и школа, группа 5-6 лет</option>
+								<option value="4">Я иду в первый класс, группа 6-7 лет</option>		
+							</select></p>
+							<div class="bar-button">
+								<input type="submit" value="Записаться" class="button button-accent">	
+							</div>		
+							<p class="text-micro">нажимая кнопку "Записаться", я соглашаюсь<br>с <a href="privacy_policy.html" rel="nofollow">Политикой конфиденциальности</a></p>										
+						</div>
+					</form>
+				</div>
+			</section>	    			
+		</div>
+	</div>
+
+<!-- Подвал -->
+	<footer class="my-footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-contact col-12 order-2 col-sm-6 order-sm-2 order-md-1 col-md-4">
+					<p class="text-footer-small">г. Костанай<br> ул. 1 Мая, д. 90/2</p>
+					<div class="box-phone">
+						<p class="text-footer-small"><i class="fa fa-mobile" aria-hidden="true"></i>+7 777 256 27 26<br><i class="fa fa-phone" aria-hidden="true"></i>8 (7142) 54-42-22</p>
+					</div>
+				</div>
+
+				<div class="footer-logo  col-12 order-1 col-sm-6 order-sm-1 order-md-2 col-md-4">
+					<a href="index.html">
+						<img class="img-logo" src="img/logo_white.png" alt="Развитие"><!--				
+					 --><div class="text-logo">
+							<p class="text-logo__small">детский центр</p>
+							<p class="text-logo__big">РАЗВИТИЕ</p>
+						</div>
+						</a>
+					<div class="social-footer">
+						<nav class="soc">
+							<ul>
+								<li><a href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+<!--								<li><a href="#"><i class="fa fa-vk"></i></a></li>-->
+							</ul>
+						</nav>	
+					</div>
+				</div>
+				<div class="footer-text order-md-3 col-md-4">
+					<div class="footer-navigation text-footer-small">
+						<ul>
+							<li><a href="index.html#welcome">О нас</a></li>
+							<li><a href="#">Наши группы</a></li>
+							<li><a href="cost.html">Стоимость</a></li>
+							<li><a href="parents.html">Родителям</a></li>
+						</ul>	 			
+					</div>		
+				</div>
+			</div>
+			<div class="footer-last row">
+				<div class="footer-copyright text-footer-small col-sm-6">
+					<i class="fa fa-copyright" aria-hidden="true"></i> Детский центр "Развитие", 2020
+				</div>
+				<div class="footer-politic text-footer-small col-sm-6">
+					<a class="text-footer-small" href="privacy_policy.html">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer> 
+<div class="top" title="Наверх"><i class="fa fa-angle-up" aria-hidden="true"></i></div> 
+</body>
+</html>
+
+

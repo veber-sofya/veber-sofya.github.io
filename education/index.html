@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Детский центр "Развитие" Костанай</title>
+	<meta name="description" content="Группы развития детей от года до 7 лет. Подготовка к школе. Изучение английского. Психологическое сопровождление и авторские методики обучения в малых группах с учетом возраста. Мы создаем уютную отмосферу для комфортного развития вашего ребенка!>">
+
+	<meta name="keywords" content="детский центр, группы развития, костанай">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/logo-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script> 
+	<script src="js/main.js"></script>
+	<script src="https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.closest"></script>
+</head>
+
+<body class="main-page">
+	<header class="my-header">
+		<div class="green-line"></div>
+		<div class="container">
+			<div class="header-bar">
+				<div>
+					<a href="#">	
+						<div class="header-logo">
+							<img class="img-logo" src="img/logo_white.png" alt="Развитие"><!--				
+						 --><div class="text-logo">
+								<p class="text-logo__small">детский центр</p>
+								<p class="text-logo__big">РАЗВИТИЕ</p>
+							</div>
+							<img class="header-decor"  src="img/romb.png" alt="">
+						</div>
+					</a>
+					<div class="header-menu">
+						<ul class="main-menu">
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="#welcome">О нас</a>
+								<ul class="submenu" data-item="about">
+									<li class="submenu-item"><a href="#welcome">Наша миссия</a></li>
+									<li class="submenu-item"><a href="parents.html#rules">Наши правила</a></li>
+									<li class="submenu-item"><a href="#plus">Почему именно мы?</a></li>
+									<li class="submenu-item"><a href="#team">Наша команда</a></li>
+<!--								<li class="submenu-item"><a href="vacancies.html">Работа у нас</a></li>-->
+								</ul>
+							</li>
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="groups.html">Наши группы</a>
+								<ul class="submenu">
+									<li class="submenu-item"><a href="groups.html#group1_2">"Я и мама", группа от 1 до 2 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group2_3">"Я сам", группа от 2 до 3 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group3_4">"Я и ты", группа от 3 до 4 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group4_5">"Я и мир", группа от 4 до 5 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group5_6">"Я и школа", группа от 5 до 6 лет</a></li>
+									<li class="submenu-item"><a href="groups.html#group6_7">"Я иду в первый класс", группа от 6 до 7 лет</a></li>								
+								</ul>
+							</li>
+							<li class="main-menu-item"><a class="header-menu__item" href="cost.html">Стоимость</a></li>
+							<li class="main-menu-item submenu-title"><a class="header-menu__item" href="parents.html">Родителям</a>
+								<ul class="submenu last-submenu" data-item="parent">
+									<li class="submenu-item"><a href="parents.html">Условия поступления</a></li>
+									<li class="submenu-item"><a href="parents.html#rules">Наши правила</a></li>
+<!--
+									<li class="submenu-item"><a href="recommendations.html">Рекомендации специалистов</a></li>
+									<li class="submenu-item"><a href="school_of_parents.html">Школа для родителей "В Ось Питание"</a></li>
+-->
+								</ul>								
+							</li>
+							<li class="main-menu-item"><a class="header-menu__item" href="#contact">Контакты</a></li>
+						</ul>
+					</div>					
+				</div>
+	
+				<div class="mobile-menu" onclick="deactive_menu(this)">
+					<ul>
+						<li>
+							<!-- к классу mobile-menu__item привязан обраточик OnClick  - щелчок по пункту меню, чтобы развернуть подменю -->
+							<div class="mobile-menu__item clearfix" data-item="about" >
+								<span>О нас</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>	
+							<ul class="mobile-submenu" data-item="about">
+								<li><a href="#welcome" class="mobile-menu__subitem  mobile-item-link">Наша миссия</a></li>
+								<li><a href="parents.html#rules" class="mobile-menu__subitem  mobile-item-link">Наши правила</a></li>
+								<li><a href="#plus" class="mobile-menu__subitem mobile-item-link">Почему именно мы?</a></li>
+								<li><a href="#team" class="mobile-menu__subitem mobile-item-link">Наша команда</a></li>
+<!--								<li><a href="vacancies.html" class="mobile-menu__subitem">Работа у нас</a></li>-->
+							</ul>						
+						</li>
+						<li>
+							<div class="mobile-menu__item clearfix" data-item="group">
+								<span>Наши группы</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>
+							<ul class="mobile-submenu" data-item="group">
+								<li><a href="groups.html#group1_2" class="mobile-menu__subitem">"Я и мама", группа от 1 до 2 лет</a></li>
+								<li><a href="groups.html#group2_3" class="mobile-menu__subitem">"Я сам", группа от 2 до 3 лет</a></li>
+								<li><a href="groups.html#group3_4" class="mobile-menu__subitem">"Я и ты", группа от 3 до 4 лет</a></li>
+								<li><a href="groups.html#group4_5" class="mobile-menu__subitem">"Я и мир", группа от 4 до 5 лет</a></li>
+								<li><a href="groups.html#group5_6" class="mobile-menu__subitem">"Я и школа", группа от 5 до 6 лет</a></li>
+								<li><a href="groups.html#group6_7" class="mobile-menu__subitem">"Я иду в первый класс", группа от 6 до 7 лет</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="cost.html" class="mobile-menu__item">Стоимость</a></li>	
+						<li>
+							<div class="mobile-menu__item clearfix" data-item="parent" >
+								<span>Родителям</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</div>	
+							<ul class="mobile-submenu" data-item="parent">
+								<li><a href="parents.html" class="mobile-menu__subitem">Условия поступления</a></li>
+								<li><a href="parents.html#rules" class="mobile-menu__subitem">Наши правила</a></li>
+<!--
+								<li><a href="recommendations.html" class="mobile-menu__subitem">Рекомендации специалистов</a></li>
+								<li><a href="school_of_parents.html" class="mobile-menu__subitem">Школа для родителей "В Ось Питание"</a></li>
+-->
+							</ul>								
+						</li>
+						<li><a href="#contact" class="mobile-menu__item mobile-item-link">Контакты</a></li>				
+					</ul>
+				</div>
+				<div class="header-contacts">
+					<img class="img-header" src="img/rombs.jpg" alt="">
+					<div class="header-contacts__adress div-flex-x">
+						<p class="text-small">г. Костанай, ул. 1 Мая, д. 90/2</p>
+						<a href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
+					<div class="header-contacts__phone">+7 777 256 27 26 <a href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<button class ="h-menu-toggle" onclick="active_menu(this)">
+							<span></span><span></span><span></span>
+						</button>						
+					</div>
+				</div>
+			</div>
+
+			<div class="owl-carousel first-carousel">
+				<div class="first-carousel__item" data-screen="group1-7">
+					<p class="h1 first-carousel__title col-sm-10 col-md-8 col-lg-8">ГРУППЫ РАЗВИТИЯ<br>ДЕТЕЙ ОТ 1 ДО 7 ЛЕТ</p>
+					<div class="first-carousel__descript col-sm-10 col-md-8 col-lg-8">
+						<p class="first-carousel__text text">Комплексное всестороннее развитие детей. Психологическое сопровождение ребенка и родителей.</p>
+						<p class="first-carousel__text text">Авторская программа, индивидуальный подход, малые группы, опытные педагоги и более 10 лет на рынке – все это даст гарантированный результат!</p>	
+					</div>								
+				</div>
+				<div class="first-carousel__item" data-screen="group5-7">
+					<p class="h1 first-carousel__title col-sm-10 col-md-8 col-lg-8">ПОДГОТОВКА К ШКОЛЕ<br>ОТ 5 ДО 7 ЛЕТ</p>
+					<div class="first-carousel__descript col-sm-10 col-md-8 col-lg-8">
+						<p class="first-carousel__text text">Мы знаем, что важно научить ребёнка считать и читать, но еще важнее в игровой форме развить умение обучаться и повысить мотивацию к ПОЗНАНИЮ!</p>
+						<p class="first-carousel__text text">Подготовка к школе - лучшая инвестиция в будущее ребенка!</p>	
+					</div>								
+				</div>		
+				<div class="first-carousel__item" data-screen="english">
+					<p class="h1 first-carousel__title col-sm-10 col-md-8 col-lg-8">АНГЛИЙСКИЙ ЯЗЫК<br> ДЛЯ ДЕТЕЙ ОТ 4 ЛЕТ</p>
+					<div class="first-carousel__descript col-sm-10 col-md-8 col-lg-8">
+						<p class="first-carousel__text text">Лучший возраст для изучения английского языка в малой группе до 8 человек!</p>
+						<p class="first-carousel__text text">Учимся играя!</p>	
+					</div>								
+				</div>						
+			</div>
+			<div class="first-carousel__nav col-10 col-sm-6 col-md-6 col-lg-4">
+				<div class="prev-button"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+				<div class="next-button"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+				<a href="#" class="button button-accent" id="a_first" onclick="choice_ref()">Узнать больше</a>
+			</div>										
+		</div>	
+	</header>
+	<div id="cover-header" onclick="deactive_menu(this)"></div>
+	
+	<section class="section-welcome" id="welcome">
+		<div class="container">
+			<h1 class="h1 title-center">Детский центр "Развитие"</h1>
+			<div class="row">
+				<div class="col-md-7">
+					<p class="text-small">С самого рождения мы готовим наших детей к взрослой жизни. Очень важно развивать в ребенке познавательные процессы, творческий потенциал, которые в дальнейшем позволяют ему свободно мыслить и быть самостоятельным. Мы поможем Вам подобрать подходящую для малыша программу обучения и поможем его успешному и плодотворному развитию.</p>
+					<p class="text-small text-bold">Мы обеспечиваем психологическую поддержку</p>
+					<p class="text-small">Ваш ребенок будет не просто играть или учиться новому. Весь процесс проходит под постоянным и доброжелательным присмотром психолога, который выявит особенности вашего ребенка, будь то трудности или большие потенциалы.</p>
+					<p class="text-small text-bold">В нашей команде нет случайных людей</p>
+					<p class="text-small">Все специалисты в первую очередь видят в ребенке личность, относятся к нему с уважением и создают все условия для развития творческих способностей и талантов ребенка.</p>
+				</div>
+			</div>
+		</div>
+	</section>	
+	
+	<section class="section-plus" id="plus">
+		<div class="container">
+			<h2 class="h1 title-center">Почему именно мы?</h2>
+			<div class="row">
+				<div class="plus-item offset-1 col-10 offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="plus-pic">
+						<img class="plus-img" src="img/diplom.png" alt="">
+					</div><!--					
+				 --><h3 class="plus-title text text-bold">Авторская методика</h3>
+					<p class="plus-text text-small">Мы разработали и успешно внедрили эффективные образовательные программы, основанные на психолого-педагогических требованиях развития ребенка в определенном возрасте</p>
+				</div>
+				<div class="plus-item offset-1 col-10  offset-1  offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="plus-pic">
+						<img class="plus-img" src="img/children3.png" alt="">
+					</div><!--					
+				 --><h3 class="plus-title text text-bold">Малые группы</h3>
+					<p class="plus-text text-small">Одно из главных условий успешного развития и социализации ребенка – это малые группы до 10 детей. Во всех группах работают по 2 педагога</p>
+				</div>				
+				<div class="plus-item offset-1 col-10  offset-1  offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="plus-pic">
+						<img class="plus-img" src="img/children.png" alt="">
+					</div><!--					
+				 --><h3 class="plus-title text text-bold">Группы по возрасту</h3>
+					<p class="plus-text text-small">В каждом возрасте ребенок обладает определенным уровнем способностей. Важно для улучшения восприятия и познания формировать группы по возрастам. Это - один из наших принципов!</p>
+				</div>	
+				<div class="plus-item offset-1 col-10  offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="plus-pic">
+						<img class="plus-img" src="img/roller.png" alt="">
+					</div><!--					
+				 --><h3 class="plus-title text text-bold">Индивидуальный подход</h3>
+					<p class="plus-text text-small">Каждый ребенок получит помощь и поддержку в увлекательном процессе развития!</p>
+					<p class="plus-text text-small">На занятиях педагоги-психологи наблюдают за каждым ребенком, создают доверительную атмосферу, помогают раскрыть скрытые способности</p>
+				</div>					
+				<div class="plus-item offset-1 col-10  offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="plus-pic">
+						<img class="plus-img" src="img/woman-and-girl.png" alt="">
+					</div><!--					
+				 --><h3 class="plus-title text text-bold">Психологическое сопровождение</h3>
+					<p class="plus-text text-small">Наши педагоги-психологи дают рекомендации родителям по воспитанию и развитию ребенка.</p>
+					<p class="plus-text text-small">Для детей от 4-7 лет мы проводим диагностику познавательных способностей и уровня знаний</p>
+				</div>					
+				<div class="plus-item offset-1 col-10  offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="plus-pic">
+						<img class="plus-img" src="img/kids.png" alt="">
+					</div><!--					
+				 --><h3 class="plus-title text text-bold">Уютная атмосфера</h3>
+					<p class="plus-text text-small">У нас светлые уютные помещения, оборудованные всем необходимым для проведения занятий.</p>
+					<p class="plus-text text-small">В нашем центре есть зона для занятий, игровая зона, зона личной гигиены, зона ожидания для родителей</p>
+				</div>					
+				
+			</div>
+		</div>
+	</section>		
+
+	<section class="section-group">
+		<div class="container">
+			<h2 class="h1 title-center">Группы развития детей</h2>
+			<div class="row">
+				<div class="group-item offset-1 col-10 offset-1  offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="group-descript">
+						<img class="group-img" src="img/group1.jpg" alt="">
+						<p class="h2">я и мама</p>
+						<p class="text-small">группа от года до двух лет</p>
+					</div>
+					<a href="#id_record" class="button button-accent">записаться</a>
+					<a href="groups.html#group1_2" class="button button-additional">подробнее</a>
+					<a href="groups.html#group1_2" class="group-item__ref"></a>
+				</div>
+				<div class="group-item offset-1 col-10 offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="group-descript">
+						<img class="group-img" src="img/group2.jpg" alt="">
+						<p class="h2">я сам</p>
+						<p class="text-small">группа от двух до трех лет</p>
+					</div>
+					<a href="#id_record" class="button button-accent">записаться</a>
+					<a href="groups.html#group2_3" class="button button-additional">подробнее</a>
+					<a href="groups.html#group2_3" class="group-item__ref"></a>
+				</div>
+				<div class="group-item offset-1 col-10 offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="group-descript">
+						<img class="group-img" src="img/group3.jpg" alt="">
+						<p class="h2">я и ты</p>
+						<p class="text-small">группа от трех до четырех лет</p>
+					</div>
+					<a href="#id_record" class="button button-accent">записаться</a>
+					<a href="groups.html#group3_4" class="button button-additional">подробнее</a>
+					<a href="groups.html#group3_4" class="group-item__ref"></a>
+				</div>
+				<div class="group-item offset-1 col-10 offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="group-descript">
+						<img class="group-img" src="img/group4.jpg" alt="">
+						<p class="h2">я и мир</p>
+						<p class="text-small">группа от четырех до пяти лет</p>
+					</div>
+					<a href="#id_record" class="button button-accent">записаться</a>
+					<a href="groups.html#group4_5" class="button button-additional">подробнее</a>
+					<a href="groups.html#group4_5" class="group-item__ref"></a>
+				</div>
+				<div class="group-item offset-1 col-10 offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="group-descript">
+						<img class="group-img" src="img/group5.jpg" alt="">
+						<p class="h2">я и школа</p>
+						<p class="text-small">группа от пяти до шести лет</p>
+					</div>
+					<a href="#id_record" class="button button-accent">записаться</a>
+					<a href="groups.html#group5_6" class="button button-additional">подробнее</a>
+					<a href="groups.html#group5_6" class="group-item__ref"></a>
+				</div>
+				<div class="group-item offset-1 col-10 offset-1 offset-sm-0 col-sm-6 offset-md-1 col-md-5 offset-lg-0 col-lg-4">
+					<div class="group-descript">
+						<img class="group-img" src="img/group6.jpg" alt="">
+						<p class="h2">я иду в первый класс</p>
+						<p class="text-small">группа от шести до семи лет</p>
+					</div>
+					<a href="#id_record" class="button button-accent">записаться</a>
+					<a href="groups.html#group6_7" class="button button-additional">подробнее</a>
+					<a href="groups.html#group6_7" class="group-item__ref"></a>
+				</div>
+			</div>
+		</div>
+	</section>	
+	
+	
+	<section class="section-record" id="id_record">
+		<div class="container">
+			<div class="row">
+				<div class="record-text col-12 offset-md-1 col-md-10 offset-md-1 offset-lg-0 col-lg-6">
+					<p class="h1 record-title">Запись в группу</p>
+					<p class="text-small">Чтобы записать вашего ребенка в группу, вам необходимо связаться с нами любым, удобным для вас способом - позвонить по указанным номерам телефонов, написать на WhatsApp или оставить заявку в данной форме.</p>
+					<p class="text-small">Укажите свои контакты и выбранную группу и мы свяжемся с вами для уточнения деталей.</p>	
+				</div>
+				<form id="record" class="record-form offset-1 col-10 offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-2 col-lg-4">
+					<div class="record-fields">
+						<p class="text-small"><input class="input-box" type="text" name="name" value="" form="record" placeholder="Ваше имя..."></p>
+						<p class="text-small"><input class="input-box" type="text" name="phone" value="" form="record" placeholder="Ваш телефон..."></p>
+						<p class="text-small"><input class="input-box" type="text" name="email" value="" form="record" placeholder="Ваш email..."></p>
+						<p class="text-small">
+						<select name="group" class="record-select" form="record">
+							<option disabled value="0" selected class="text-disable">выберите группу...</option>
+							<option value="1">Я и мама, группа 1-2 года</option>
+							<option value="2">Я сам, группа 2-3 года</option>
+							<option value="3">Я и ты, группа 3-4 года</option>
+							<option value="3">Я и мир, группа 4-5 лет</option>
+							<option value="3">Я и школа, группа 5-6 лет</option>
+							<option value="4">Я иду в первый класс, группа 6-7 лет</option>		
+						</select></p>
+						<div class="bar-button">
+							<input type="submit" value="Записаться" class="button button-accent">
+						</div>		
+						<p class="text-micro">нажимая кнопку "Записаться", я соглашаюсь<br>с <a href="privacy_policy.html" rel="nofollow">Политикой конфиденциальности</a></p>										
+					</div>
+
+				</form>
+			
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-review">
+		<div class="container">
+			<p class="h1 title-center">Отзывы</p>
+			<div class="owl-carousel review-carousel">
+				<div class="review-carousel__item row">
+					<div class="review-descript offset-0 col-12 offset-sm-1 col-sm-10">
+						<p class="text-small"><i class="fa fa-quote-right" aria-hidden="true"></i>Ходим в центр "Развитие" уже два года.</p>
+						<p class="text-small">И каждый раз после занятий мой Саша говорит "Мама, а представляешь, мы сегодня такое сделали!" и прямо светится весь от удовольствия.</p>
+						<p class="text-small">За это время мы многому научились: рисовать, лепить, складывать кубики и... вещи.</p>
+						<p class="text-small">А недавно мы начали ходить на дополнительные уроки английского языка. Понимаем как важно теперь человеку знать дополнительный язык. И кажентся мы с мужем начинаем учить его вместе с сыном.  Так что большое вам всем спасибо!... </p>
+						<p class="review-descript__signature text-small">семья Ивановых</p>
+					</div>								
+				</div>
+				<div class="review-carousel__item row">
+					<div class="review-descript offset-0 col-12 offset-sm-1 col-sm-10">
+						<p class="text-small"><i class="fa fa-quote-right" aria-hidden="true"></i>Ходим в центр "Развитие" уже два года.</p>
+						<p class="text-small">И каждый раз после занятий мой Саша говорит "Мама, а представляешь, мы сегодня такое сделали!" и прямо светится весь от удовольствия.</p>
+						<p class="text-small">За это время мы многому научились: рисовать, лепить, складывать кубики и... вещи.</p>
+						<p class="text-small">А недавно мы начали ходить на дополнительные уроки английского языка. Понимаем как важно теперь человеку знать дополнительный язык. И кажентся мы с мужем начинаем учить его вместе с сыном.  Так что большое вам всем спасибо!... </p>
+						<p class="review-descript__signature text-small">семья Ивановых</p>
+					</div>								
+				</div>
+			</div>
+			<div class="review-carousel__nav">
+				<div class="prev-button"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+				<div class="next-button"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+			</div>		
+		</div>
+	</section>
+	
+	<section class="section-leader">
+		<div class="container">
+			<div class="row">
+				<div class="d-none d-sm-none d-md-block col-md-4 offset-lg-1 col-lg-4">
+					<img class="leader-photo" src="img/leader.jpg" alt="">
+				</div>
+				<div class="offset-1 col-10 offset-1 offset-sm-2 col-sm-8 offset-sm-2 d-md-none d-lg-none">
+					<img class="leader-photo" src="img/leader-small.jpg" alt="">
+				</div>
+				<div class="leader-text offset-1 col-10 offset-sm-1 col-sm-10 offset-sm-1 offset-md-1 col-md-7  offset-md-1 offset-lg-1 col-lg-5 offset-lg-1">
+					<p class="text-small">Здесь должен быть очень вдохновляющий и трогательный пост, который повергнет читателя в священный трепет и заставит вести своих детей в центр "Развитие" из всех уголков цивилизованного мира, худо бедно владеющего русским языком. Однако, вдохновитель центра пока в процессе создания этого шедевра, так что для заполнения пустого пространства приходится писать хоть что-то...</p>
+					<p class="text leader-quote">  Ребята! Вы не пожалеете, если отдатите свое чадо в центр "Развитие". Как минимум, отдохнете пару часов от своего нежно любимого создания и может быть, если вам посчастливится, даже успеете о нем заскучать...</p>
+					<p class="text-small">Мы на самом деле любим ваших детей. Это потому, что мы умеем их готовить. И не под соусом маринара! (о чем вы вообще сейчас подумали?) Мы готовим их к большой интересной жизни с ее бесконечными возможностями, радостями и трудостями, взлетами и падениями.</p>	
+					<div class="leader-caption div-flex-x">
+						<p class="text-small "><em>Елена Топорова,<br>руководитель детского центра «Развитие»</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	<section class="section-team" id="team">
+		<div class="container">
+			<p class="h1 title-center">Наша команда</p>
+			<div class="owl-carousel team-carousel">
+				<div class="team-carousel__item">
+					<div class="team-photo">
+						<img class="team-img" src="img/teacher1.jpg" alt="">	
+						<p class="team-name text">Татьяна иванова</p>
+						<p class="team-prof text-small">педагог-психолог</p>
+					</div>	
+				</div>
+				<div class="team-carousel__item">
+					<div class="team-photo">
+						<img class="team-img" src="img/teacher2.jpg" alt="">	
+						<p class="team-name text">Елена Топорова</p>
+						<p class="team-prof text-small">психолог</p>
+					</div>	
+				</div>
+				<div class="team-carousel__item">
+					<div class="team-photo">
+						<img class="team-img" src="img/teacher3.jpg" alt="">	
+						<p class="team-name text">Светлана Александрова</p>
+						<p class="team-prof text-small">учитель английского языка</p>
+					</div>	
+				</div>
+				<div class="team-carousel__item">
+					<div class="team-photo">
+						<img class="team-img" src="img/teacher4.jpg" alt="">	
+						<p class="team-name text">Карлыгаш Айтенова</p>
+						<p class="team-prof text-small">учитель казахского языка</p>
+					</div>	
+				</div>			
+			</div>
+			<div class="team-carousel__nav">
+				<div class="prev-button"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+				<div class="next-button"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+			</div>		
+		</div>
+	</section>
+		
+	<section class="section-question">
+		<div class="container">
+			<div class="row">
+				<div class="record-text col-12 offset-md-1 col-md-10 offset-md-1 offset-lg-0 col-lg-6">
+					<p class="h1 record-title">Остались вопросы?</p>
+					<p class="text-small">Если у вас остались вопросы, вы можете связаться с нами любым удобным для вас способом - позвонив по телефонам, написав на WhatsApp или оставив свой вопрос в данной форме.</p>
+					<p class="text-small">Мы ответим вам в течение суток на указанный вами электронный адрес.</p>	
+				</div>
+				<form id="question" class="record-form offset-1 col-10 offset-sm-2 col-sm-8 offset-md-3 col-md-6 offset-lg-2 col-lg-4">
+					<div class="record-fields">
+						<p class="text-small"><input class="input-box" type="text" name="name" value="" form="question" placeholder="Ваше имя..."></p>
+						<p class="text-small"><input class="input-box" type="text" name="email" value="" form="question" placeholder="Ваш email..."></p>
+						<p class="text-small"><textarea name="comment" cols="40" rows="3" form="question" placeholder="Задайте ваш вопрос..."></textarea></p>
+						<div class="bar-button">
+							<input type="submit" value="Отправить" class="button button-accent">
+						</div>		
+						<p class="text-micro">нажимая кнопку "Отправить", я соглашаюсь<br>с <a href="privacy_policy.html" rel="nofollow">Политикой конфиденциальности</a></p>										
+					</div>
+				</form>
+			
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-contact" id="contact">
+		<div class="container">
+			<p class="h1 title-center">Контакты</p>
+			<div class="row">
+				<div class="contact-card col-12 offset-sm-2 col-sm-8 offset-sm-2 offset-md-0 col-md-7">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A72a06d05f75c712a507d0adab777ad6c02cd9d905da6c1dd8944d91ae2735333&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+				</div>
+				<div class="contact-text offset-0 col-12 offset-sm-2 col-sm-8 offset-md-0 col-md-5 offset-lg-1 col-lg-4">
+					<p class="text-small contact-adress">г. Костанай, ул. 1 Мая, д. 90/2</p>
+					<p class="text-small">+7 777-256-27-26</p>
+					<p class="text-small">+7 (7142) 54-42-22</p>
+					<p class="text-small contact-time">Время работы: понедельник - пятница</p>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+	
+<!-- Подвал -->
+	<footer class="my-footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-contact col-12 order-2 col-sm-6 order-sm-2 order-md-1 col-md-4">
+					<p class="text-footer-small">г. Костанай<br> ул. 1 Мая, д. 90/2</p>
+					<div class="box-phone">
+						<p class="text-footer-small"><i class="fa fa-mobile" aria-hidden="true"></i>+7 777 256 27 26<br><i class="fa fa-phone" aria-hidden="true"></i>8 (7142) 54-42-22</p>
+					</div>
+				</div>
+
+				<div class="footer-logo  col-12 order-1 col-sm-6 order-sm-1 order-md-2 col-md-4">
+					<a href="index.html">
+						<img class="img-logo" src="img/logo_white.png" alt="Развитие"><!--				
+					 --><div class="text-logo">
+							<p class="text-logo__small">детский центр</p>
+							<p class="text-logo__big">РАЗВИТИЕ</p>
+						</div>
+						</a>
+					<div class="social-footer">
+						<nav class="soc">
+							<ul>
+								<li><a href="https://www.instagram.com/centr_razvitie_kst/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+<!--								<li><a href="#"><i class="fa fa-vk"></i></a></li>-->
+							</ul>
+						</nav>	
+					</div>
+				</div>
+				<div class="footer-text order-md-3 col-md-4">
+					<div class="footer-navigation text-footer-small">
+						<ul>
+							<li><a href="#welcome">О нас</a></li>
+							<li><a href="groups.html">Наши группы</a></li>
+							<li><a href="cost.html">Стоимость</a></li>
+							<li><a href="parents.html">Родителям</a></li>
+						</ul>	 			
+					</div>		
+				</div>
+			</div>
+			<div class="footer-last row">
+				<div class="footer-copyright text-footer-small col-sm-6">
+					<i class="fa fa-copyright" aria-hidden="true"></i> Детский центр "Развитие", 2020
+				</div>
+				<div class="footer-politic text-footer-small col-sm-6">
+					<a class="text-footer-small" href="privacy_policy.html">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer> 
+<div class="top" title="Наверх"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+</body>
+</html>
