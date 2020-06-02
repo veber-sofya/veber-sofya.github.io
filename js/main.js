@@ -53,9 +53,12 @@ function toAnchor_event(){
 
 function close_popup__EVENT(){
 	if (this == event.target) {
-		var elem = document.getElementsByClassName("popup-page");
-		for(var i=0;i<elem.length;i++) {
-			elem[i].style.display="none";
+		var elem = document.getElementById("view-case");
+		elem.style.display="none";
+
+		var item = elem.querySelector(".viewcase-img");
+		if (item.classList.contains("viewcase-img__view")==true) {
+			item.classList.remove("viewcase-img__view");
 		};
 
 		var header = document.querySelector('body');
@@ -70,7 +73,10 @@ function open_popup_viewcase(){
 
 	var item = elem.querySelector(".viewcase-img img");
 	item.setAttribute("src",x_data.photo);
-	
+	item = elem.querySelector(".viewcase-img");
+	if (item.classList.contains("viewcase-img__view")==false) {
+		item.classList.add("viewcase-img__view");
+	};
 	item = elem.querySelector(".viewcase-button");
 	item.setAttribute("href",x_data.link);
 	
