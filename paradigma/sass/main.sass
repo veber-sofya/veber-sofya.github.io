@@ -1,0 +1,672 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	--popup_t: 1.82vw
+	--popup_m: 1.3vw
+	--popup_p: 2.6vw
+.body-modal
+	overflow: hidden
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+.container
+	width: 79vw
+	margin: 0 auto
+
+.df-x
+	display: flex	
+	flex-wrap: wrap
+	justify-content: space-between
+
+.df-xc
+	display: flex	
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+.df-y
+	display: flex	
+	flex-direction: column
+	justify-content: space-between
+.df-c-c
+	display: flex	
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+.df-xs-s
+	display: flex	
+	flex-wrap: wrap
+	justify-content: flex-start
+	align-items: flex-start
+.df-xs-c
+	display: flex	
+	flex-wrap: wrap
+	justify-content: flex-start
+	align-items: center
+.shadow
+	box-shadow: 3px 0 20px rgba($color-shadow, .11)
+
+///////////////////////////////////////////////////////////////////////////////////
+.first
+	position: relative
+	background-image: url(../img/bg.jpg)
+	background-size: cover
+	background-position: top
+	background-repeat: no-repeat 
+.parallax
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 0
+.item-parallax__1
+	position: absolute
+	left: 6.3vw
+	top: 14vw
+	width: 19.11vw
+	height: 17.71vw
+	img
+		width: 100%
+		height: auto
+.item-parallax__2
+	position: absolute
+	right: -5.5vw
+	top: 4.27vw
+	width: 13.12vw
+	height: 13.85vw
+	img
+		width: 100%
+		height: auto
+.header
+	position: relative
+	z-index: 10
+	padding: 1.5vw 0 .5vw
+	color: $text
+	font-family: "Museo", sans-serif
+.header-logo
+	align-items: center
+.logo-img
+	width: 14.5vw
+	display: block
+	img
+		width: 100%	
+.logo-text
+	width: 9.5vw
+	margin-left: 2vw
+.logo-text__font
+	font-family: "Museo", sans-serif
+	font-weight: 300
+	font-size: 0.73vw
+
+.header-content
+	align-items: stretch
+	width: 48vw
+.header-adress
+	align-items: stretch
+	position: relative
+	z-index: 100
+.header-adress_img
+	height: 4.1vw
+	width: 4.1vw
+	border-radius: 2vw
+	overflow: hidden
+	img
+		width: 100%
+		height: auto
+	
+.header-adress_content
+	align-items: flex-start
+	margin-left: 1vw
+	letter-spacing: .075vw
+	font-size: .83vw
+.header-adress_title
+	font-weight: 700
+	line-height: 1.3
+.header-adress_text
+	font-weight: 300	
+	line-height: 1.25
+.header-adress_map
+	color: $accent
+	font-weight: 500
+	font-size: .62vw
+	letter-spacing: .12vw
+	cursor: pointer
+	&:after
+		content: ''
+		display: block
+		height: 1px
+		border-bottom: 1px dashed $accent
+
+.map-view
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	width: 17vw
+	height: 17vw
+.header-adress
+	&:hover
+		.map-view
+			display: block
+
+.header_icon
+	height: 1.82vw
+	width: 1.82vw
+	border-radius: 2vw
+	overflow: hidden
+	background-color: #fff
+	margin-right: .5vw
+	img
+		width: .78vw
+		height: .78vw
+		
+.phone_caption
+	font-weight: 500
+	font-size: .63vw
+	letter-spacing: .06vw
+	line-height: 1
+	margin-bottom: .3vw
+	&::before
+		content: ''
+		display: inline-block
+		height: .4vw
+		width: .4vw
+		border-radius: 1vw
+		background-color: #27B24B
+		box-shadow: 3px 0 10px rgba(#27B24B, .11)
+		margin-right: .4vw
+.phone_number
+	font-weight: 500
+	font-size: 1.25vw
+	letter-spacing: .06vw
+	line-height: 1	
+
+.contact_text
+	font-weight: 300
+	font-size: .82vw
+	letter-spacing: .06vw
+	line-height: 1
+	span
+		font-weight: 700
+
+.button
+	font-family: "Museo", sans-serif
+	padding: 1.04vw 1.46vw
+	border-radius: 10vw
+
+.button-caption
+	font-size: 0.78vw
+	font-weight: 500
+	letter-spacing: .06vw
+	background-color: #FEFDFB
+	border: none !important
+	box-shadow: inset 0 -4px 1px rgba($color-shadow, .11)
+	transition: all 0.4s
+	.button-icon
+		width: .78vw
+		height: .78vw
+		margin-right: .78vw
+	&:hover
+		cursor: pointer
+		box-shadow: inset 0 4px 1px rgba($color-shadow, .11)
+
+.button-accent
+	font-size: 0.78vw
+	font-weight: 700
+	letter-spacing: .06vw
+	background: linear-gradient(to top, #ee858c, #fabcbc)
+	border: none !important
+	box-shadow:  0 7px 27px rgba(#F18383, 0.57), inset 0 -4px 1px rgba(#D0757A, 1)
+	transition: all 0.4s
+	color: #fff
+	&:hover
+		cursor: pointer
+		box-shadow: 0 7px 27px rgba(#F18383, 0.57), inset 0 4px 1px rgba($color-shadow, .11)
+.d1
+	width: 60%
+//панель навигации
+.navigation
+	position: relative
+	z-index: 5
+.navi
+	position: relative	
+	background-color: #fff
+	width: 81vw
+	margin: 0 auto
+	border-radius: 0.26vw
+	padding: 1vw 1.87vw
+	box-sizing: border-box
+	z-index: 2
+.navi-shadow
+	position: absolute
+	border-radius: 0.26vw
+	background-color: #fff
+	opacity: 0.5
+	height: 100%
+	width: calc(100% - 2vw)
+	top: 0.5vw
+	left: 1vw
+	z-index: 1
+
+.navi-menu
+	font-size: 0.78vw
+	font-weight: 300
+	letter-spacing: .05vw
+	margin: 0
+	padding: 0
+	position: relative
+	z-index: 7
+	li
+		list-style-type: none
+		display: inline-block
+
+.navi-item
+	cursor: pointer
+	color: $text
+	&:hover
+		color: $accent
+
+.navi-item_active
+	font-weight: 700
+
+//бургер
+.mobile-navi
+	display: none
+	position: absolute
+
+.div-burger
+	position: relative
+	margin-top: -5px
+.h-menu-toggle
+	box-sizing: border-box
+	position: relative
+	width: 30px
+	height: 30px
+	border: none
+	background-color: transparent
+	cursor: pointer
+	z-index: 210
+	vertical-align: top
+
+.h-menu-toggle 
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		display: block
+		width: 28px
+		height: 3px
+		margin: -1px 0 0 -14px
+		border-radius: 2px
+		background-color: $accent
+		transition: 300ms
+		-ms-transform-origin: 14px 1.5px
+		transform-origin: 14px 1.5px
+
+.h-menu-toggle span:nth-of-type(1)
+	margin-top: -9px
+
+.h-menu-toggle span:nth-of-type(3)
+	margin-top: 7px
+
+.h-menu-toggle--close span:nth-of-type(1)
+	margin-top: -1px
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	background-color: $accent
+
+.h-menu-toggle--close span:nth-of-type(2)
+	opacity: 0
+	background-color: $accent
+
+.h-menu-toggle--close span:nth-of-type(3)
+	margin-top: -1px
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	background-color: $accent
+
+.mobile-menu__open
+	display: block !important
+
+#cover-header
+	position: fixed
+	top: 0
+	left: 0
+	width: 50%
+	height: 100%
+	z-index: 201
+	background-color: darken(#fff,10%)
+	opacity: .3
+
+.display__none
+	display: none
+
+// Всплюывающее окно
+.popup-page
+	z-index: 2000
+	display: none
+	position: fixed
+	left: 0
+	top: 0
+	height: 100%
+	width: 100%
+	overflow: auto
+	background-color: rgba(#F7F8FA,.6)
+.popup-page__out
+	display: table
+	width: 100%
+	height: 100%
+	
+.popup-page__in
+	display: table-cell
+	vertical-align: middle
+	padding: 20px 0 20px
+	text-align: center
+	pointer-events: none
+
+.popup-page__content
+	background-image: url(../img/bg.jpg)
+	background-size: cover
+	background-position: top
+	background-repeat: no-repeat 
+	margin: 0 auto
+	text-align: left
+	position: relative
+	z-index: 2
+	pointer-events: all
+	box-sizing: border-box
+	font-family: "Museo", sans-serif
+	border-radius: 2.6vw
+	box-shadow: 0 0 20px rgba($accent,0.1)
+.popup-page__close
+	position: absolute
+	width: 12px
+	height: 12px
+	background: url("../img/close.png") no-repeat
+	transition: opacity .3s
+	cursor: pointer
+	&:hover
+		opacity: .3
+
+#request
+	.popup-page__content
+		padding: var(--popup_p)
+		text-align: center
+		min-width: 320px
+		max-width: 700px
+		width: 80%
+		align-items: center
+		position: relative
+	.popup-page__close
+		top: 30px
+		right: 30px
+
+.request-title
+	font-size: var(--popup_t)
+	font-weight: 300
+	span
+		font-weight: 700
+.request-text
+	font-size: 16px
+	font-weight: 300	
+
+#form-request
+	position: relative
+	text-align: center
+	width: 80%
+	p
+		margin: var(--popup_m) 0
+	.input-box
+		box-sizing: border-box
+		padding: var(--popup_m)
+		width: 100%
+		border-radius: 10vw
+		border: none
+	
+	.button-accent
+		position: relative
+		width: 100%
+		padding: var(--popup_m)
+		padding-left: 15%
+		text-align: left
+		.button_decor
+			position: absolute
+			top: 10%
+			left: 70%
+input
+	font-weight: 300
+	color: $color-shadow	
+	font-size: 16px
+	font-family: "Museo", sans-serif
+.popup-img_decor
+	position: absolute
+	top: 30%
+	left: -16%
+
+.choice_course
+	color: $color-shadow
+	font-size: 16px
+	position: relative
+	background-color: #fff
+	margin: var(--popup_m) 0
+	.fa-caret-down
+		display: block
+	.fa-caret-up
+		display: none
+.choice_course__open
+	border-bottom-right-radius: 0 !important
+	border-bottom-left-radius: 0 !important
+	.fa-caret-down
+		display: none 
+	.fa-caret-up
+		display: block
+.name_course_text
+	line-height: 1
+
+.select-course
+	text-align: left
+	position: absolute
+	width: 100%
+	top: 90%
+	left: 0
+	background: linear-gradient(to bottom, #fff, #F2EEEC)
+	border-top: rgba($accent,0.2)
+	padding-bottom: var(--popup_m)
+	border-end-start-radius: 3vw
+	border-end-end-radius: 3vw
+	font-size: 16px
+	ul
+		padding: 0 var(--popup_m)
+		margin: 0
+		li
+			color: $color-shadow
+			list-style-type: none
+			cursor: pointer
+			padding: 0.5vw 0
+			&:hover
+				color: $accent
+
+#success-send
+	.popup-page__content
+		text-align: center
+		min-width: 320px
+		max-width: 520px
+		width: 80%
+		align-items: center
+		position: relative
+		overflow: hidden
+	.popup-page__close
+		top: 30px
+		right: 30px
+	.img_bg
+		width: 100%
+		height: auto
+
+	.success-caption
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+
+	.success-title
+		font-size: var(--popup_t)
+		font-weight: 700
+	.success-text
+		font-size: var(--popup_t)
+		font-weight: 300
+
+.first-title 
+	position: relative
+	box-sizing: border-box
+	padding-top: 5.62vw
+	padding-left: 5.02vw
+	padding-bottom: 11.09vw
+.first-decor
+	position: absolute
+	right: 0 
+	bottom: 3vw
+	width: 45vw
+
+.title__font
+	font-family: "Museo", sans-serif
+	font-weight: 300
+	font-size: 2.5vw
+	line-height: 1.1
+	letter-spacing: .025vw
+	margin: 0
+	span
+		font-weight: 700
+.firts-list_ul
+	box-sizing: border-box
+	padding: 1.5vw 0
+	li
+		list-style-type: none
+		font-size: 0.9375vw
+		font-weight: 300
+		padding: .4vw 0
+		line-height: 1.25
+		&:before
+			content: ''
+			display: inline-block
+			height: 0.4166vw
+			width: 0.4166vw
+			border-radius: 1vw
+			background-color: $accent
+			border: 0.2vw solid #F3F6F8
+			box-shadow: 3px 0 10px rgba($accent, .2)
+			margin-right: .625vw
+
+.card-client
+	position: absolute
+	width: 44.427vw
+	left: calc(50% - 13.54vw)
+	top: 18.54vw
+.card-client_img
+	width: 100%
+
+.card-client_info
+	position: absolute
+	width: 9.11vw
+	padding: 0
+	top: 0vw
+	left: 18vw
+.card-client__bg-opacity
+	width: 9.11vw
+	opacity: 0.5
+	img
+		width: 100%
+.card-client__bg
+	width: 9.11vw
+	position: absolute
+	bottom: -0.5vw
+	left: -0.5vw
+	img
+		width: 100%
+.card-client__text
+	position: absolute
+	box-sizing: border-box
+	padding: 1vw
+	font-size: .73vw
+	font-weight: 300
+	line-height: 1.25
+	top: 1vw
+	left: 0vw
+	right: 1vw
+	text-align: center
+
+.area-info
+	.card-client_info
+		display: none
+	&:hover
+		.card-client_info
+			display: block
+
+#button_card_info
+	position: absolute
+	height: 2.08vw
+	width: 2.08vw
+	padding: 0
+	top: 9.5vw
+	left: 17vw
+	img
+		height: 1.2vw
+		width: 1.2vw		
+
+@keyframes animate_info
+	0%
+		box-shadow: 0 0 0 0 rgba($accent,0.4)
+	50%
+		box-shadow: 0 0 0 15px rgba($accent,0.1)
+	70%
+		box-shadow: 0 0 0 25px rgba($accent,0)
+	100%
+		box-shadow: 0 0 0 0 rgba($accent,0)
+
+.alert_info
+	animation: animate_info 2s infinite
+
+#button_card_send
+	position: relative
+	padding: 1.3vw
+	width: 19.74vw
+	padding-right: 6vw
+	text-align: center
+	.button_decor
+		position: absolute
+		top: 10%
+		left: 65%
+		width: 10.88vw
+
+.first_wave
+	position: absolute
+	width: 100%
+	bottom: 0
+	left: 0
+	right: 0
+
+.arrow_down
+	position: absolute
+	display: flex
+	justify-content: center
+	width: 100%
+	bottom: 3.5vw
+	left: 0
+	right: 0
+	img
+		width: 6.82vw
+		height: 6.82vw
+
+@import "media"
